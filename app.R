@@ -19,7 +19,6 @@ require(wordcloud2) # installed from git remotes::install_github("lchiffon/wordc
 require(readr)
 require(data.table)
 require(shinyWidgets)
-require(bslib)
 require(r2social)
 # cargando script de funciones
 source("functions.R")
