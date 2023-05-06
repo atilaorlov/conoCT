@@ -74,7 +74,7 @@ ui <- fluidPage(
       p(
         "Si tienes dudas mira este video instructivo de 1 minuto en mi canal de Youtube"
       ),
-      tags$a(href="https://www.youtube.com/playlist?list=PL6wLL_RojB5xNOhe2OTSd-DPkMLVY9DfB", icon("youtube"), "Video Instructivo - 1 minuto", target="_blank"),
+      tags$a(href="https://www.youtube.com/@atltl", icon("youtube"), "Video Instructivo - 1 minuto", target="_blank"),
       
       h2("2. Interactúa con tu nube"),
       p(
@@ -91,7 +91,7 @@ ui <- fluidPage(
       hr(),
       p("Esta aplicación es de código abierto. No recauda absolutamente ninguno de tus datos."),
       p("Puedes consultar el código fuente aquí"),
-      tags$a(href="https://github.com/atilaorlov/conocete", icon("github"), "Código Fuente", target="_blank")
+      tags$a(href="https://github.com/Atilaorlov/conoCT", icon("github"), "Código Fuente", target="_blank")
       
     ),
     # panel de outputs
