@@ -1,10 +1,3 @@
----
-title: "tech_guide"
-author: "Atila"
-date: "2023-04-30"
-output: pdf_document
----
-
 # Archivos JSON
 
 La información de facebook la puedes decargar dentro de la conf de priv o en el siguiente enlace https://www.facebook.com/dyi/
