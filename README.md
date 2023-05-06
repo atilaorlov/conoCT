@@ -14,7 +14,7 @@ o en https://www.facebook.com/dyi/
 
 Elije solamente tus posts. En próximas versiones se implementarán nubes para tus comentarios y chat.
 
-Descargala en formato JSON y carga el archivo en la App.
+Descargala en formato JSON. Descomprime el archivo descargado y busca y carga el archivo "your_posts_1.json" en la App.
 
 La aplicación despliega una nube de palabras interactiva.
 
