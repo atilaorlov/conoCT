@@ -30,7 +30,7 @@ crear_nube <- function(aDataframe) {
   ############ colectando palabras
   # agregar stopwords de español
   custom_stop_words <- bind_rows(stop_words,
-                                 data_frame(word = stopwords("spanish"),
+                                 tibble(word = stopwords("spanish"),
                                             lexicon = "custom"))
   ############################
   ## Contar palabras
