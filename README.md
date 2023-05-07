@@ -12,7 +12,7 @@ No dejes que los algoritmos de redes sociales sean los únicos que te conozacan.
 Puedes descargar tu información de facebook dentro de la conf de priv
 o en https://www.facebook.com/dyi/
 
-Elije solamente tus posts. En próximas versiones se implementarán nubes para tus comentarios y chat.
+Elige solamente tus posts. En próximas versiones se implementarán nubes para tus comentarios y chat.
 
 Descargala en formato JSON. Descomprime el archivo descargado y busca y carga el archivo "your_posts_1.json" en la App.
 
