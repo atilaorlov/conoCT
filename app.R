@@ -22,14 +22,14 @@ require(shinyWidgets)
 require(r2social)
 # cargando script de funciones
 source("functions.R")
-# webshot::install_phantomjs() # necesario para shiny io
-# webshot:::find_phantom()
+webshot::install_phantomjs() # necesario para shiny io
+webshot:::find_phantom()
 ## USER INTERFACE
 ################
 ui <- fluidPage(
   theme = bslib::bs_theme(version = 5, bootswatch = "minty"),
   r2social.scripts(),
-  shareButton(link = "https://github.com/Atilaorlov", position = "right"),
+  shareButton(link = "https://atilaorlov.shinyapps.io/conoCT/", position = "right"),
   setBackgroundImage(
     src = "https://images.unsplash.com/photo-1511933801659-156d99ebea3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
   ),
@@ -44,9 +44,9 @@ ui <- fluidPage(
   ),
   ####
   titlePanel(title = 
-             tags$a(href='https://www.google.com',
+             tags$a(href='https://atilaorlov.shinyapps.io/conoCT/',
                     icon("ice-cream"),
-                    'conoCT', target="_blank"),
+                    'conoCT'),
              windowTitle = "conoCT"),
   sidebarLayout(
     # Panel de herramientas (input e instructivo)
