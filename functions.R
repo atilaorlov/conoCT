@@ -59,11 +59,12 @@ crear_nube <- function(aDataframe) {
   ### NUMERO DE PALABRAS A MOSTRAR
   n_word <- 20 # yes... you know the N-word nobody can say
   ##########################
+  top_word <- head(word_counts, n_word)
   # Crear nube -- esto regresa la función
   wordcloud2(
-    head(word_counts, n_word),
+    top_word,
     color = rep_len(my_palette,
-                    nrow(word_counts)),
+                    nrow(top_word)),
     shape = "star",
     size = 0.7,
     backgroundColor = "White"
