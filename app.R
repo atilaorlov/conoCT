@@ -72,9 +72,9 @@ ui <- fluidPage(
         "Basta que elijas la casilla de tus posts. Elige el rango de tiempo que desees."
       ),
       p(
-        "Si tienes dudas mira este video instructivo de 1 minuto en mi canal de Youtube"
+        "Si tienes dudas mira este video instructivo de más de 1 minuto en mi canal de Youtube"
       ),
-      tags$a(href="https://www.youtube.com/@atltl", icon("youtube"), "Video Instructivo - 1 minuto", target="_blank"),
+      tags$a(href="https://youtu.be/xKU9_72vXzc", icon("youtube"), "Video Instructivo - +1 minuto", target="_blank"),
       
       h2("2. Interactúa con tu nube"),
       p(
