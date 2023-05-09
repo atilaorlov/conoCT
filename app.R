@@ -91,7 +91,7 @@ ui <- fluidPage(
       hr(),
       p("Esta aplicación es de código abierto. No recauda absolutamente ninguno de tus datos."),
       p("Puedes consultar el código fuente aquí"),
-      tags$a(href="https://github.com/Atilaorlov/conoCT", icon("github"), "Código Fuente", target="_blank")
+      tags$a(href="https://github.com/atilaorlov/conoCT", icon("github"), "Código Fuente", target="_blank")
       
     ),
     # panel de outputs
