@@ -39,7 +39,14 @@ crear_nube <- function(aDataframe) {
     unnest_tokens("word", post_clean) %>%
     anti_join(custom_stop_words, by = "word") %>%
     count(word) %>%
-    filter(n > 8) %>% na.omit() # que aparezcan al menos 9 veces.
+    filter(n > 1) %>% # que aparezcan repetidas
+    na.omit()
+  
+  # reordenar
+  word_counts <- arrange(word_counts, desc(n))
+    
+  print(word_counts)
+  
   # Definir colores de nube
   my_palette <-
     c("steelblue",
@@ -48,9 +55,13 @@ crear_nube <- function(aDataframe) {
       "powderblue",
       "purple",
       "chocolate")
+  # CONTROL - DIRECTIVA
+  ### NUMERO DE PALABRAS A MOSTRAR
+  n_word <- 20 # yes... you know the N-word nobody can say
+  ##########################
   # Crear nube -- esto regresa la función
   wordcloud2(
-    word_counts,
+    head(word_counts, n_word),
     color = rep_len(my_palette,
                     nrow(word_counts)),
     shape = "star",
