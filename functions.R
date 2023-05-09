@@ -23,7 +23,7 @@ crear_df_nube <- function(aJsonPath) {
   # lo hice por un problema con palabras que rodeadas con puntos y otros símbolos.
 }
 
-# Función que crea nube de palabras que se repiten al menos 9 veces
+# Función que crea nube de palabras que se repiten. top n_word
 # dentro de tus publicaciones de facebook.
 crear_nube <- function(aDataframe) { 
   ###########################
@@ -59,7 +59,7 @@ crear_nube <- function(aDataframe) {
   ### NUMERO DE PALABRAS A MOSTRAR
   n_word <- 20 # yes... you know the N-word nobody can say
   ##########################
-  top_word <- head(word_counts, n_word)
+  top_word <- head(word_counts, n_word) # gimme head... shampoo!
   # Crear nube -- esto regresa la función
   wordcloud2(
     top_word,
