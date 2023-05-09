@@ -18,6 +18,14 @@ Descargala en formato JSON. Descomprime el archivo descargado y busca y carga el
 
 La aplicación despliega una nube de palabras interactiva.
 
+Try the app on shinyapps:
+
+https://atilaorlov.shinyapps.io/conoCT/
+
+Watch a brief tutorial video:
+
+https://youtu.be/xKU9_72vXzc
+
 # De quién es la imágen de fondo
 
 La descargué de unsplash
