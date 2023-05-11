@@ -63,7 +63,7 @@ crear_nube <- function(aDataframe, n_word) { # yes... you know the N-word nobody
     color = rep_len(my_palette,
                     nrow(top_word)),
     shape = "star",
-    size = 0.7,
+    #size = 0.7, # dejar tamaño 100%, debugging Mavil error
     backgroundColor = "White"
   )
 }
