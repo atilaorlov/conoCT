@@ -60,6 +60,12 @@ ui <- fluidPage(
         multiple = FALSE,
         accept = c(".json")
       ),
+      # min y max word deberá ser dinámico, al menos el máx.
+      # min puede ser 1 para cubrir casos extremos
+      # max deberá ser nrow(wordcounts)
+      # que se calcula una vez leído el archivo
+      ### así que session, ahí vamos
+      sliderInput("n_word", "Número de palabras", 1, 2, value = 1, step = 1),
       h1("Instrucciones:"),
       h2("1. Carga tu archivo .json"),
       p("Lo puedes descargar desde el siguiente enlace:"),
@@ -128,7 +134,7 @@ server <- function(input, output, session) {
     )
   })
   output$wordcloud <- renderWordcloud2({
-    tu_nube <<- crear_nube(df())
+    tu_nube <<- crear_nube(df(), input$n_word)
   })
   output$savecloud <- downloadHandler(
     filename = paste0("wordcloud", '.png'),
@@ -151,6 +157,12 @@ server <- function(input, output, session) {
   })
   
   output$filtered_tbl = renderTable(filtered_comment())
-  
+  ## hace dinamico el slider dependiente del número de palabras leídas en json
+  observe({
+    n_word <- nrow(df())
+    # el numero de vueltas permitido es igual al numero de observaciones menos uno
+    # se observo que tiene un comportamiento modular modulo (val-1)
+    updateSliderInput(session, "n_word", max = n_word)
+  })
 }
 shinyApp(ui, server)

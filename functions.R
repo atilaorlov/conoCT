@@ -25,7 +25,7 @@ crear_df_nube <- function(aJsonPath) {
 
 # Función que crea nube de palabras que se repiten. top n_word
 # dentro de tus publicaciones de facebook.
-crear_nube <- function(aDataframe) { 
+crear_nube <- function(aDataframe, n_word) { # yes... you know the N-word nobody can say
   ###########################
   ############ colectando palabras
   # agregar stopwords de español
@@ -44,8 +44,6 @@ crear_nube <- function(aDataframe) {
   
   # reordenar
   word_counts <- arrange(word_counts, desc(n))
-    
-  print(word_counts)
   
   # Definir colores de nube
   my_palette <-
@@ -57,7 +55,6 @@ crear_nube <- function(aDataframe) {
       "chocolate")
   # CONTROL - DIRECTIVA
   ### NUMERO DE PALABRAS A MOSTRAR
-  n_word <- 20 # yes... you know the N-word nobody can say
   ##########################
   top_word <- head(word_counts, n_word) # gimme head... shampoo!
   # Crear nube -- esto regresa la función

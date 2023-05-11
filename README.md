@@ -26,6 +26,9 @@ Watch a brief tutorial video:
 
 https://youtu.be/xKU9_72vXzc
 
+Se agregó un slider para elegir el número de palabras deseado.
+Este se ajustará para optimizar el estilo de la nube. Cuando son demasiadas palabras puede haber problemas con la resolución. Estoy resolviendo esto.
+
 # De quién es la imágen de fondo
 
 La descargué de unsplash
